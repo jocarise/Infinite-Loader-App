@@ -1,0 +1,148 @@
+/* Card */
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+
+.card-hover {
+  font-family: arial black;
+  font-size: 100px;
+  color: #000;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.card-hover:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 480px) {
+  .card {
+    /* Add shadows to create the "card" effect */
+    width: 45%;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    margin: 12px 0 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    /* Add shadows to create the "card" effect */
+    width: 100%;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    margin: 12px 10px 12px 10px;
+  }
+}
+
+/* Add some padding inside the card container */
+.container {
+  display: flex;
+  padding-left: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .left-card {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+  }
+  .right-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+  }
+}
+
+@media (min-width: 480px) {  
+  .left-card {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+  }
+  .right-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  }
+}
+
+.left-card-container {
+  display: flex;
+}
+
+.card-icon {
+  margin-top: 11px;
+}
+
+.card-time {
+  margin-top: 14px;
+  margin-left: 6px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #767676;
+}
+
+.card-title {
+  margin: 6px 16px 14px 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.25px;
+  color: #6b6b6b;
+}
+
+/* Post filter options selector */
+.values-selector {
+  width: 240px;
+  margin-top: 2%;
+}
+
+.options-selector {
+  width: 100%;
+}
+
+/* Filters */
+.selection-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.Rectangle {
+  padding: 3px 39px 0 40px;
+  border-radius: 2px;
+  border: solid 1px #1797ff;
+  cursor: pointer;
+}
+
+.Rectangle .selection-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1797ff;
+}
